@@ -2,6 +2,7 @@ const express = require('express')
 const cors = require('cors')
 const app = express()
 
+app.use(express.static('dist'))
 // middlewear (that can be used for handling request and response objects)
 
 let notes = [
